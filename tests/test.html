@@ -1,0 +1,28 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Offer History for Sleeper - tests</title>
+<style>
+  body{font:14px/1.5 system-ui,sans-serif;background:#0f1b2b;color:#dfe7f3;margin:24px}
+  .ok{color:#22d3a6}.bad{color:#ff5d7a;font-weight:700}
+  pre{white-space:pre-wrap;color:#ffb648;margin:2px 0 8px 18px}
+  #summary{font-size:18px;margin-bottom:12px}
+</style>
+<h2>Offer History for Sleeper - browser tests (dummy data only)</h2>
+<div id="summary">Running…</div>
+<div id="out"></div>
+<div id="stage"></div>
+<script>
+  // The extension reads these at load time; everything here is fake.
+  window.__OSH_TEST__ = {};
+  localStorage.setItem('user_id', '"U_ME"');
+  localStorage.removeItem('__osh:v1');
+  localStorage.removeItem('__osh:v1:players');
+  history.replaceState(null, '', '/leagues/100000000000000001/trades');
+  // Keep the page quiet if the extension tries the network by mistake.
+  window.__netCalls = [];
+  const realFetch = window.fetch;
+  window.fetch = function (u) { window.__netCalls.push(String(u)); return realFetch.apply(this, arguments); };
+</script>
+<script src="/extension/inject.js"></script>
+<script src="/extension/content.js"></script>
+<script src="/tests/tests.js"></script>

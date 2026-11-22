@@ -1,0 +1,16 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Offer History harness</title>
+<!-- Loads the extension scripts into a bare page. Used (in an iframe) by tests.js to check how the
+     extension starts up with pre-seeded / corrupted storage. -->
+<script>
+  window.__OSH_TEST__ = {};
+  try {
+    localStorage.setItem('user_id', '"U_ME"');
+    const seed = new URLSearchParams(location.search).get('seed');
+    if (seed !== null) localStorage.setItem('__osh:v1', seed); else localStorage.removeItem('__osh:v1');
+    window.addEventListener('error', (e) => { window.__harnessErrors = (window.__harnessErrors || []).concat(String(e.message)); });
+  } catch (e) { window.__harnessErrors = [String(e)]; }
+</script>
+<script src="../extension/inject.js"></script>
+<script src="../extension/content.js"></script>

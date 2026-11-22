@@ -1,0 +1,5 @@
+dist/
+PLAN.md
+*.log
+.DS_Store
+Thumbs.db
