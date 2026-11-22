@@ -1,4 +1,4 @@
-# Offer History for Sleeper
+# Offer History for Sleeper Fantasy Football
 
 Load this folder in your browser:
 

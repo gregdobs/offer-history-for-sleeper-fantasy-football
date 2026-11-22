@@ -1,4 +1,4 @@
-/* Browser test suite for Offer History for Sleeper. Dummy data only; no Sleeper account needed.
+/* Browser test suite for Offer History for Sleeper Fantasy Football. Dummy data only; no Sleeper account needed.
  * Run: python tests/server.py   then open http://localhost:8765/tests/test.html
  * Results are shown on the page and exposed as window.__TEST_RESULTS. */
 (async () => {

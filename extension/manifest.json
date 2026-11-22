@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Offer History for Sleeper",
-  "version": "1.0.0",
+  "name": "Offer History for Sleeper Fantasy Football",
+  "version": "1.0.1",
   "description": "See your past trade offers and their outcomes while you build a new one on Sleeper, and get warned before you send the same offer twice.",
   "minimum_chrome_version": "111",
   "icons": {

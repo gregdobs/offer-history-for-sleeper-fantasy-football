@@ -1,6 +1,6 @@
-﻿<p align="center"><img src="docs/icon-1024.png" width="112" alt="Offer History for Sleeper icon"></p>
+﻿<p align="center"><img src="docs/icon-1024.png" width="112" alt="Offer History for Sleeper Fantasy Football icon"></p>
 
-# Offer History for Sleeper
+# Offer History for Sleeper Fantasy Football
 
 A Chrome extension that remembers every trade offer you've sent or received on
 [Sleeper](https://sleeper.com) and shows them **right where you build a new trade** - so you never send
@@ -28,9 +28,9 @@ When you open **Trade -> Propose Trade**, pick a partner and start adding player
 
 You need Chrome, Edge, Brave or another Chromium browser, version 111 or newer.
 
-1. Go to the **[Releases](https://github.com/gregdobs/offer-history-for-sleeper/releases/latest)** page and download
-   `offer-history-for-sleeper-v1.0.0.zip` (the file under *Assets*, not "Source code").
-2. **Unzip** it to a folder you'll keep (for example `Documents\offer-history-for-sleeper`).
+1. Go to the **[Releases](https://github.com/gregdobs/offer-history-for-sleeper-fantasy-football/releases/latest)** page and download
+   `offer-history-for-sleeper-fantasy-football-v1.0.1.zip` (the file under *Assets*, not "Source code").
+2. **Unzip** it to a folder you'll keep (for example `Documents\offer-history-for-sleeper-fantasy-football`).
    The browser loads the extension from that folder, so don't delete it afterwards.
 3. Open `chrome://extensions` (Edge: `edge://extensions`) and turn on **Developer mode** (top right).
 4. Click **Load unpacked** and choose the unzipped folder - the one that contains `manifest.json`.
@@ -72,7 +72,7 @@ Click **Remove** on the extension's card. This deletes the saved history too.
   Sleeper hasn't loaded). Older seasons of a league are fetched for you when possible.
 - Draft picks are compared by **year and round**, not by which team originally owned the pick.
 - It relies on how Sleeper's website currently works. If Sleeper changes its pages, the card may stop
-  appearing until the extension is updated - please [open an issue](https://github.com/gregdobs/offer-history-for-sleeper/issues).
+  appearing until the extension is updated - please [open an issue](https://github.com/gregdobs/offer-history-for-sleeper-fantasy-football/issues).
 - The classic layout has no light mode, so the card is dark there.
 
 ## Troubleshooting
@@ -82,7 +82,7 @@ Click **Remove** on the extension's card. This deletes the saved history too.
 | No card in the trade screen | Reload the Sleeper tab; confirm the extension is enabled in `chrome://extensions`; make sure you're on `sleeper.com`. |
 | "No past offers" but you know there are some | Open the league's page once and reload so the extension can collect its history, then try again. |
 | Footer says it couldn't refresh from Sleeper | The card still shows what's saved. Reload Sleeper to renew the session, then reopen the trade screen. |
-| Card looks wrong after a Sleeper update | Report it in [Issues](https://github.com/gregdobs/offer-history-for-sleeper/issues) with the layout (classic/new) and a screenshot (hide player names if you like). |
+| Card looks wrong after a Sleeper update | Report it in [Issues](https://github.com/gregdobs/offer-history-for-sleeper-fantasy-football/issues) with the layout (classic/new) and a screenshot (hide player names if you like). |
 
 ## Development
 

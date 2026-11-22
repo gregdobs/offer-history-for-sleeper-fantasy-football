@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.1
+
+- Renamed to **Offer History for Sleeper Fantasy Football**, to match the repository
+  (now `gregdobs/offer-history-for-sleeper-fantasy-football`). The release zip is now
+  `offer-history-for-sleeper-fantasy-football-v<version>.zip`.
+- No behavior changes.
+
 ## 1.0.0
 
 First public release.

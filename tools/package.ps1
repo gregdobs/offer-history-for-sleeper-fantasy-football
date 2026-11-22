@@ -1,4 +1,4 @@
-# Builds dist\offer-history-for-sleeper-v<version>.zip from the extension folder.
+# Builds dist\offer-history-for-sleeper-fantasy-football-v<version>.zip from the extension folder.
 # The zip has manifest.json at its root, so it can be unzipped and loaded as-is.
 # Usage:  powershell -ExecutionPolicy Bypass -File tools\package.ps1
 Add-Type -AssemblyName System.IO.Compression
@@ -11,7 +11,7 @@ $manifest = Get-Content (Join-Path $src 'manifest.json') -Raw | ConvertFrom-Json
 $version = $manifest.version
 $dist = Join-Path $root 'dist'
 New-Item -ItemType Directory -Force $dist | Out-Null
-$zip = Join-Path $dist "offer-history-for-sleeper-v$version.zip"
+$zip = Join-Path $dist "offer-history-for-sleeper-fantasy-football-v$version.zip"
 if (Test-Path $zip) { Remove-Item $zip -Force }
 
 $archive = [System.IO.Compression.ZipFile]::Open($zip, 'Create')
@@ -23,7 +23,7 @@ try {
 } finally { $archive.Dispose() }
 
 $hash = (Get-FileHash $zip -Algorithm SHA256).Hash.ToLower()
-"$hash  $(Split-Path $zip -Leaf)" | Set-Content (Join-Path $dist "offer-history-for-sleeper-v$version.sha256") -Encoding ascii
+"$hash  $(Split-Path $zip -Leaf)" | Set-Content (Join-Path $dist "offer-history-for-sleeper-fantasy-football-v$version.sha256") -Encoding ascii
 $check = [System.IO.Compression.ZipFile]::OpenRead($zip)
 try { $check.Entries | ForEach-Object { $_.FullName } } finally { $check.Dispose() }
 "Built $zip"

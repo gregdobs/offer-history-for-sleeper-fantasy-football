@@ -1,5 +1,5 @@
 /*
- * Offer History for Sleeper - content script.
+ * Offer History for Sleeper Fantasy Football - content script.
  *
  * - Stores every trade offer Sleeper shows this account (all statuses) locally.
  * - While you build a trade (old and new Sleeper layouts) it adds an "Offer History"

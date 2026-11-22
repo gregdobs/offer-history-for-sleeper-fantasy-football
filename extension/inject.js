@@ -1,5 +1,5 @@
 /*
- * Offer History for Sleeper - page-world script.
+ * Offer History for Sleeper Fantasy Football - page-world script.
  *
  * Runs inside the Sleeper page (world: MAIN) so it can see the app's own GraphQL
  * traffic. It only ever:
